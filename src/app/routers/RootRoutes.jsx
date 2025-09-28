@@ -1,33 +1,41 @@
 import React from "react";
-import { Navigate } from "react-router-dom";
+import { Navigate, useRoutes } from "react-router-dom";
 import dashboardRoutes from "./dashboardRoutes";
 import authRoutes from "./authRoutes";
-//import AuthGuard from "../guard/AuthGuard";
+import Layout1 from "../view/layout/Layout1/Layout1";
 
-// Chuyển "/" → "/signin" (login trước)
-const redirectRoute = {
-  path: "/",
-  element: <Navigate to="/signin" replace />,
-};
 
-// Trang lỗi 404
-const errorRoute = {
-  path: "*",
-  element: <Navigate to="/404" replace />,
-};
+// V5: Redirect "/" -> "/home" (exact: true)
+// V6: dùng index route để redirect
+const redirectIndex = { index: true, element: <Navigate to="/home" replace /> };
 
-// Gộp route
-const RootRoutes = [
-  ...authRoutes, // ví dụ: /login, /register
+// V5: errorRoute dùng component Redirect không có path
+// V6: dùng wildcard "*"
+const errorRoute = { path: "*", element: <Navigate to="/404" replace /> };
+
+const routes = [
+  // giống ...authRoutes (public: /login, /register, /404,...)
+  ...authRoutes,
+
+  // V5: { path: "/", component: AuthGuard, routes: [...] }
+  // V6: { path: "/", element: <AuthGuard/>, children: [...] }
   {
     path: "/",
-    //element: <AuthGuard />,      // bảo vệ các route bên trong
+    //element: <AuthGuard />,
+     element: <Layout1 />,
     children: [
-      ...dashboardRoutes,        // ví dụ: /home, /dashboard
-      redirectRoute,
+      // giống ...dashboardRoutes (protected: /home, /dashboard,...)
+      ...dashboardRoutes,
+
+      // "/" -> "/home"
+      redirectIndex,
+
+      // "*" -> "/404"
       errorRoute,
     ],
   },
 ];
 
-export default RootRoutes;
+export default function RootRouter() {
+  return useRoutes(routes);
+}

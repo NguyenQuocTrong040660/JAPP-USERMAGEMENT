@@ -1,17 +1,14 @@
 import { lazy } from "react";
 
 // Lazy load components
-const Home = lazy(() => import("../view/home"));
+
+const Dashboard = lazy(() => import("../view/home/Dashboard"));
 
 const dashboardRoutes = [
   {
     path: "/dashboard",
-    element: <Home />,
-  },
-  {
-    path: "/",
-    element: <Home />,
-  },
+    element: <Dashboard />,
+  }
 ];
 
 export default dashboardRoutes;

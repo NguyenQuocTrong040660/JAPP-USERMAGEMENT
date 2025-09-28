@@ -1,6 +1,6 @@
 import jwtAuthService from "../../services/JwtAuthService";
 import { setUserData, removeUserData } from "./UserActions";
-import apiService from "../../services/ApiService";
+import apiService from "../../services/apiService";
 import { getLangText } from "../../utils/@lang";
 
 export const LOGIN_ERROR = "LOGIN_ERROR";

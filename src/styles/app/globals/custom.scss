@@ -1,0 +1,179 @@
+@media (min-width: 576px){
+    .form-inline-custom{
+        width: 60% !important;
+    }
+    .custom-button-loopkup{
+        width: auto;
+        border-color: transparent !important;
+    }
+    .custom-label-lookup{
+        width: 40% !important;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-left: 5px;
+        color: blue;
+    }
+    .form-inline-custom-dt{
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 576px){
+    .form-inline-custom{
+        width: 100% !important;
+    }
+    .form-inline-custom-dt{
+        width: 100% !important;
+    }
+    .custom-label-lookup{
+        width: 100% !important;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-left: 5px;
+        color: blue;
+    }
+    .custom-button-loopkup{
+        width: auto !important;
+        border-color: transparent !important;
+    }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.custom-date-picker{
+    display: flex !important; 
+}
+.custom-invalid-feedback{
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 90%;
+    color: #f44336;
+}
+
+.invalid-feedback{
+    font-size: 90% !important;
+}
+
+
+.NativeDatepicker__input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.NativeDatepicker__input::-webkit-calendar-picker-indicator {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+#reset-button.datetime-reset-button {
+    display: none !important;
+    visibility: hidden;
+  }
+
+  input[type=date]::-ms-clear {
+    display: none;
+    visibility: hidden;
+  }
+
+input[type="time"]::-webkit-clear-button {
+    display: none;
+    visibility: hidden;
+}
+input[type="date"]::-webkit-clear-button {
+    display: none;
+    visibility: hidden;
+}
+
+input[type="datetime"]::-webkit-clear-button {
+    display: none;
+    visibility: hidden;
+}
+
+input[type="date"]::-webkit-search-cancel-button {
+    display: none;
+    visibility: hidden;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+    visibility: hidden;
+}
+
+.NativeDatepicker {
+    display: inline-block;
+    z-index: 100;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: transparent url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTkiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTUgMHYxaDhWMGgxdjFoMmEyIDIgMCAwMTIgMnYxNGEyIDIgMCAwMS0yIDJIMmEyIDIgMCAwMS0yLTJWM2EyIDIgMCAwMTItMmgyVjBoMXptMTIgN0gxdjEwYTEgMSAwIDAwMSAxaDE0YTEgMSAwIDAwMS0xVjd6TTQgMTZ2MUgydi0xaDJ6bTMgMHYxSDV2LTFoMnptMyAwdjFIOHYtMWgyem0tNi0ydjFIMnYtMWgyem0zIDB2MUg1di0xaDJ6bTMgMHYxSDh2LTFoMnptMyAwdjFoLTJ2LTFoMnptMyAwdjFoLTJ2LTFoMnpNNCAxMnYxSDJ2LTFoMnptMyAwdjFINXYtMWgyem0zIDB2MUg4di0xaDJ6bTMgMHYxaC0ydi0xaDJ6bTMgMHYxaC0ydi0xaDJ6TTQgMTB2MUgydi0xaDJ6bTMgMHYxSDV2LTFoMnptMyAwdjFIOHYtMWgyem0zIDB2MWgtMnYtMWgyem0zIDB2MWgtMnYtMWgyek03IDh2MUg1VjhoMnptMyAwdjFIOFY4aDJ6bTMgMHYxaC0yVjhoMnptMyAwdjFoLTJWOGgyek00IDJIMmExIDEgMCAwMC0xIDF2M2gxNlYzYTEgMSAwIDAwLTEtMWgtMnYzaC0xVjJINXYzSDRWMnoiIGZpbGw9IiNBMEFFQzAiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==') no-repeat center center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+
+.bs-wizard {flex-wrap: nowrap !important; width: 100%;}
+.bs-wizard {padding: 0 0 10px 0;}
+.bs-wizard > .bs-wizard-step {padding: 0; position: relative; width: inherit}
+.bs-wizard > .bs-wizard-step + .bs-wizard-step {}
+.bs-wizard > .bs-wizard-step .bs-wizard-info {color: #999; font-size: 14px;}
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot {position: absolute; width: 30px; height: 30px; display: block; background: #7d7c79; top: 22px; left: 50%; margin-top: -15px; margin-left: -15px; border-radius: 50%;background-color: #bdbdbd;} 
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot-active {position: absolute; width: 30px; height: 30px; display: block; background: #007bff; top: 22px; left: 50%; margin-top: -15px; margin-left: -15px; border-radius: 50%;} 
+.bs-wizard > .bs-wizard-step > .progress {position: relative; border-radius: 0px; height: 8px; box-shadow: none; margin: 20px 0;}
+.bs-wizard > .bs-wizard-step > .progress > .progress-bar {width:0px; box-shadow: none; transition: width 0.0s ease;}
+.bs-wizard > .bs-wizard-step.complete > .progress > .progress-bar {width:100%;}
+.bs-wizard > .bs-wizard-step.active > .progress > .progress-bar {width:50%;}
+.bs-wizard > .bs-wizard-step:first-child.active > .progress > .progress-bar {width:0%;}
+.bs-wizard > .bs-wizard-step:last-child.active > .progress > .progress-bar {width: 100%;}
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot {background-color: #f5f5f5;}
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot:after {opacity: 0;}
+.bs-wizard > .bs-wizard-step:first-child  > .progress {left: 50%; width: 50%;}
+.bs-wizard > .bs-wizard-step:last-child  > .progress {width: 50%;}
+.bs-wizard > .bs-wizard-step.disabled a.bs-wizard-dot{ pointer-events: none; }
+
+
+.progress-bar {
+    transition: width 0.6s ease;
+  }
+  
+  .progress-bar.indeterminate {
+     position: relative;
+     animation: progress-indeterminate 3s linear infinite;
+   }
+   
+   @keyframes progress-indeterminate {
+      from { left: -50%; width: 50%; }
+      to { left: 100%; width: 50%;}
+   }
+  
+   .progress-bar.indeterminate-reverse {
+    position: relative;
+    animation: progress-indeterminate-reverse 1.5s linear infinite alternate-reverse;
+  }
+  
+  @keyframes progress-indeterminate-reverse {
+    from { left: 0%; width: 50%; }
+    to { left: 50%; width: 50%;}
+  }
